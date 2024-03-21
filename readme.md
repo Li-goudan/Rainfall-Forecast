@@ -10,43 +10,39 @@
 
 ```
 .
-├── Q1&Q2					//针对问题1和2以及涉及问题3的代码，使用深度学习训练
-│   ├── ckpt				//针对问题1、2、3训练得到的权重模型
-│   │   ├── ckpt_1
-│   │   ├── ckpt_2
-│   │   └── ckpt_3
-│   ├── data				//自定义数据载入实现
-│   │   └── dataset.py
-│   ├── log 	 			//训练及测试打屏信息记录
-│   │   ├── test_1.log
-│   │   ├── test_2.log
-│   │   ├── training_1.log
-│   │   ├── training_2.log
-│   │   └── training_3.log
-│   ├── net					//自定义网络实现
-│   │   └── mynet.py
-│   ├── output				//针对问题1、2、3的预测结果绘图输出
-│   │   ├── output_1
-│   │   ├── output_2
-│   │   └── output_3
-│   ├── read_npy			//数据可视化
-│   │   ├── drawing
-│   │   └── read_npy.py
-│   └── src					//训练代码相关
-│       ├── loss_ssim.py
-│       ├── main.py
-│       ├── test.py
-│       └── train.py
-├── Q3						//针对问题3的代码
-│   ├── PhysicsFit.py
-│   └── PhysicsRain.py
-└── Q4						//针对问题4的代码
-    └── ZH_ZDR.py
+└── RainfallForecast			//针对问题1和2以及涉及问题3的代码，使用深度学习训练
+    ├── ckpt				//针对问题1、2、3训练得到的权重模型
+    │   ├── ckpt_1
+    │   ├── ckpt_2
+    │   └── ckpt_3
+    ├── data				//自定义数据载入实现
+    │   └── dataset.py
+    ├── log 	 			//训练及测试打屏信息记录
+    │   ├── test_1.log
+    │   ├── test_2.log
+    │   ├── training_1.log
+    │   ├── training_2.log
+    │   └── training_3.log
+    ├── net				//自定义网络实现
+    │   └── mynet.py
+    ├── output				//针对问题1、2、3的预测结果绘图输出
+    │   ├── output_1
+    │   ├── output_2
+    │   └── output_3
+    ├── read_npy			//数据可视化
+    │   ├── drawing
+    │   └── read_npy.py
+    └── src				//训练代码相关
+        ├── loss_ssim.py
+        ├── main.py
+        ├── test.py
+        └── train.py
+
 ```
 
 ---
 
-##自定义数据载入
+## 自定义数据载入
 
 ```python
 class CustomDataset1(Dataset):
